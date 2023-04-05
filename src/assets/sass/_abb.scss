@@ -1,0 +1,71 @@
+@font-face {
+    font-family: dotty;
+    src: url('../font/dotty.ttf');
+}
+
+@font-face {
+    font-family: prototype;
+    src: url('../font/Prototype.ttf');
+}
+
+@font-face {
+    font-family: sfns;
+    src: url('../font/SFNSText-Regular.ttf');
+}
+
+// @font-face {
+//     font-family: shutdown;
+//     src: url('../font/Shutdown!.ttf');
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 999;
+    transition: top 0.2s ease-in-out;
+    top: 0px;
+}
+
+header iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+footer iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 856px) {
+    header {
+    }
+}

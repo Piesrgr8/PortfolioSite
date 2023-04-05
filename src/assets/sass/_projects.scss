@@ -1,0 +1,355 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+    transition: all 1s;
+
+    section {
+        display: flex;
+        padding-bottom: 100px;
+        justify-content: center;
+
+        p {
+            line-height: 33px;
+            font-size: 23px;
+            font-family: sfns;
+        }
+    }
+
+    .section-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-img {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-desc button {
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .section-title {
+        display: block;
+        font-family: prototype;
+        font-size: 40px;
+    }
+
+    .title-header {
+        width: 100%;
+
+        h1 {
+            font-family: prototype;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .buttons {
+        display: table;
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+        button {
+            width: 30%;
+            height: 350px;
+            margin: 20px 10px;
+            font-size: 30px;
+            transition: 0.2s;
+
+            p {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+
+        #button1:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-image: url('../media/pictures/stock-1.jpg');
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
+
+        #button2:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/HTML5_CSS_JavaScript.png');
+            background-size: auto 100px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
+
+        #button3:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/Tips-for-Editing-Videos-Faster-Premiere-Pro.jpg');
+            background-size: 750px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
+    }
+
+    .webbuttons {
+        display: table;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .webbuttons button {
+        width: 20%;
+        height: 150px;
+        margin: 20px 10px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+
+    .webbuttons button p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .webbuttons #button7:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-image: url('../media/pictures/cover.jpg');
+        background-size: 350px 250px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .webbuttons #button8:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-position: center;
+        background-image: url('../media/pictures/bsucardinal.png');
+        background-size: auto 100px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .vidbuttons {
+        display: table;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .vidbuttons button {
+        width: 20%;
+        height: 150px;
+        margin: 20px 10px;
+        font-size: 30px;
+        transition: 0.2s;
+    }
+
+    .vidbuttons button p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .vidbuttons #button4:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-image: url('../media/pictures/cover.jpg');
+        background-size: 350px 250px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .vidbuttons #button5:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-position: center;
+        background-image: url('../media/pictures/laville.png');
+        background-size: auto 100px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .vidbuttons #button6:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-position: center;
+        background-image: url('../media/pictures/afs.png');
+        background-size: 350px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .content-video iframe {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        box-shadow: -5px 8px 7px 3px black;
+        border: none;
+    }
+
+    .content-video {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .content-img {
+        display: block;
+        text-align: center;
+    }
+
+    .content-img img {
+        box-shadow: 4px 8px 7px 3px black;
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 1542px) {
+    .projects {
+        section {
+            margin: 0px 30px;
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        section p {
+            margin: 10px;
+        }
+
+        .section-inner {
+            flex-direction: column;
+        }
+
+        .content-img img {
+            max-width: 500px;
+            height: 60%;
+        }
+
+        .content-video {
+            max-width: 600px;
+            max-height: 600px;
+        }
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .projects {
+        .buttons {
+            display: flex;
+            flex-direction: row;
+        }
+        .projects .section-inner {
+            flex-direction: column;
+        }
+
+        .webbuttons,
+        .vidbuttons {
+            button {
+                flex-direction: column;
+                margin: auto;
+                width: 300px;
+            }
+
+            p {
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projects {
+        .title-header h1 {
+            padding-top: 60px;
+            font-size: 80px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttons button {
+            width: 300px;
+            height: 200px;
+            margin: 15px 0px;
+        }
+
+        .webbuttons,
+        .vidbuttons {
+            button {
+                flex-direction: column;
+                margin: auto;
+                width: 150px;
+            }
+
+            p {
+                text-align: center;
+                margin: auto;
+            }
+        }
+
+        .projects section {
+            margin: 0px 30px;
+        }
+
+        .projects .section-title {
+            text-align: center;
+        }
+
+        .projects section p {
+            margin: 10px;
+        }
+
+        .projects .section-inner {
+            flex-direction: column;
+        }
+
+        .content-img img {
+            max-width: 370px;
+            height: 80%;
+        }
+
+        .content-video {
+            max-width: 600px;
+            max-height: 600px;
+        }
+    }
+}

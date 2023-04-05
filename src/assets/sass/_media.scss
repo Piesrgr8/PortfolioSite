@@ -1,0 +1,131 @@
+.content {
+    padding-top: 100px;
+    width: 100%;
+}
+
+.content-title {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.content-title h1 {
+    font-family: prototype;
+    font-size: 100px;
+}
+
+.content-title hr {
+    margin: 10px 480px;
+    border-color: black;
+    border-width: thick;
+}
+
+.conent-desc {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 500px;
+    padding: 20px;
+    border: solid;
+    border-radius: 25px;
+}
+
+.twitch-content {
+    display: flex;
+    height: 900px;
+    padding-top: 100px;
+    margin: 0px 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.twitch-content img {
+    display: block;
+    width: 600px;
+    height: 300px;
+}
+
+.twitch-content #placeholders {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid;
+    border-color: #a645ff;
+}
+
+.youtube-content {
+    display: flex;
+    height: 900px;
+    padding-top: 100px;
+    margin: 0px 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youtube-content img {
+    display: block;
+    width: 600px;
+    height: 300px;
+}
+
+.youtube-content #placeholders {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid;
+    border-color: #fd0004;
+}
+
+.discord-content {
+    display: flex;
+    height: 900px;
+    padding-top: 100px;
+    margin: 0px 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discord-content img {
+    display: block;
+    width: 700px;
+    height: 200px;
+}
+
+.discord-content #placeholders {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid;
+    border-color: #7289da;
+}
+
+.spotify-content {
+    display: flex;
+    height: 900px;
+    padding-top: 100px;
+    margin: 0px 200px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotify-content img {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.spotify-content #placeholders {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid;
+    border-color: #1ab26b;
+}
+
+@media only screen and (max-width: 900px) {
+    header iframe {
+        height: 200px;
+    }
+}
