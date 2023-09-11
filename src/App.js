@@ -12,6 +12,7 @@ import Projects from './pages/Projects'
 import Media from './pages/Media'
 import Blog from './pages/Blog'
 import BlogPost from './comp/BlogPost'
+import Background from './comp/Background'
 
 function App() {
     const [loaded, setLoaded] = useState(false)
@@ -30,6 +31,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Header />
+                <Background />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

@@ -4,10 +4,15 @@ import twitchlogo from '../assets/media/pictures/twitchlogo.png'
 import youtubelogo from '../assets/media/pictures/youtubelogo.png'
 import discord from '../assets/media/pictures/discord.png'
 import spotify from '../assets/media/pictures/spotify.png'
+import axios from 'axios'
 
 export default function Media() {
     useEffect(() => {
         document.title = 'Piesrgr8 - Media'
+        axios
+            .get('https://a.co/d/fN2duU9')
+            .then((e) => console.log(e))
+            .catch((e) => console.log(e))
     }, [])
 
     return (

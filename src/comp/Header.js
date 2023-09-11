@@ -5,19 +5,26 @@ import menubtn from '../assets/media/pictures/menu.png'
 
 export default function Header() {
     const location = useLocation().pathname
-    const [menuVisible, setMenuVisibility] = useState(false);
+    const [menuVisible, setMenuVisibility] = useState(false)
 
     const menuButton = () => {
-        menuVisible ? setMenuVisibility(false) : setMenuVisibility(true);
+        menuVisible ? setMenuVisibility(false) : setMenuVisibility(true)
     }
 
     return (
         <>
             <header className="header" id={location === '/' ? '#homepage' : ''}>
-                <div className='menub'>
+                <div className="menub">
                     <img alt="menu" onClick={menuButton} src={menubtn} />
-                    <div className='menubmenu' style={menuVisible ? {display: 'block'} : {display: 'none'}}>
-                        <ul className='navigation'>
+                    <div
+                        className="menubmenu"
+                        style={
+                            menuVisible
+                                ? { display: 'block' }
+                                : { display: 'none' }
+                        }
+                    >
+                        <ul className="navigation">
                             <li>
                                 <Link to="/about">About</Link>
                             </li>
@@ -33,7 +40,7 @@ export default function Header() {
                         </ul>
                     </div>
                 </div>
-                
+
                 <div className="inner">
                     {/* <div class="menub">
 <img alt="menu" onclick="menuButton(this)" src="media/pictures/menu.png">

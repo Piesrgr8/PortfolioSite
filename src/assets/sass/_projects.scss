@@ -203,6 +203,17 @@
         font-size: 30px;
         text-shadow: 2px 2px 3px black;
         background-position: center;
+        background-image: url('../media/pictures/bsucardinal.png');
+        background-size: auto 100px;
+        background-repeat: no-repeat;
+        transition: 0.2s;
+    }
+
+    .vidbuttons #button7:hover {
+        color: white;
+        font-size: 30px;
+        text-shadow: 2px 2px 3px black;
+        background-position: center;
         background-image: url('../media/pictures/afs.png');
         background-size: 350px;
         background-repeat: no-repeat;

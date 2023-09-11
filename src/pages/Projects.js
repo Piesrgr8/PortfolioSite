@@ -5,6 +5,7 @@ import textor from '../assets/media/pictures/textor.PNG'
 import DrawSwing from '../assets/media/pictures/drawswing.png'
 import MedTrak from '../assets/media/pictures/medtrak-prev.gif'
 import PieBot from '../assets/media/pictures/discordbot.png'
+import ResBot from '../assets/media/pictures/resbot.png'
 import campaign from '../assets/media/pictures/alexweb.png'
 import shakespeare from '../assets/media/pictures/shakespeare.gif'
 import trf from '../assets/media/pictures/therightfluff.PNG'
@@ -57,11 +58,20 @@ const dev = [
         link: 'https://discord.gg/MbPJT6hKE2',
         img: PieBot,
     },
+    {
+        id: 6,
+        type: 'dev',
+        subtype: 'personal',
+        title: 'ResBot',
+        desc: 'A discord bot created to specifically be used as a primary platform for residence halls throughout every college campus. RAs can message their own floors, recieve reports, and make announcements globally to their own residence hall. Perfect for building communities and breaking the ice!',
+        link: 'https://discord.gg/MbPJT6hKE2',
+        img: ResBot,
+    },
 ]
 const web = [
     [
         {
-            id: 6,
+            id: 7,
             type: 'web',
             subtype: 'personal',
             title: 'Piesrgr8 Website',
@@ -70,7 +80,7 @@ const web = [
             img: '',
         },
         {
-            id: 7,
+            id: 8,
             type: 'web',
             subtype: 'personal',
             title: 'Bowman For Indiana',
@@ -79,7 +89,7 @@ const web = [
             img: campaign,
         },
         {
-            id: 8,
+            id: 9,
             type: 'web',
             subtype: 'personal',
             title: 'Shakespeare Sound Podcast',
@@ -88,7 +98,7 @@ const web = [
             img: shakespeare,
         },
         {
-            id: 9,
+            id: 10,
             type: 'web',
             subtype: 'personal',
             title: 'The Right Fluff',
@@ -97,7 +107,7 @@ const web = [
             img: trf,
         },
         {
-            id: 10,
+            id: 11,
             type: 'web',
             subtype: 'personal',
             title: 'SWCFT Website',
@@ -108,7 +118,7 @@ const web = [
     ],
     [
         {
-            id: 11,
+            id: 12,
             type: 'web',
             subtype: 'ballstate',
             title: 'Clearpath',
@@ -121,7 +131,7 @@ const web = [
 const vid = [
     [
         {
-            id: 12,
+            id: 13,
             type: 'vid',
             subtype: 'personal',
             title: 'DreamWave',
@@ -130,7 +140,7 @@ const vid = [
             img: '',
         },
         {
-            id: 13,
+            id: 14,
             type: 'vid',
             subtype: 'personal',
             title: 'MTV Cribs Parody',
@@ -139,7 +149,7 @@ const vid = [
             img: '',
         },
         {
-            id: 14,
+            id: 15,
             type: 'vid',
             subtype: 'personal',
             title: 'New Years Eve',
@@ -148,7 +158,7 @@ const vid = [
             img: '',
         },
         {
-            id: 15,
+            id: 16,
             type: 'vid',
             subtype: 'personal',
             title: 'Throughout The Generations',
@@ -159,7 +169,7 @@ const vid = [
     ],
     [
         {
-            id: 16,
+            id: 17,
             type: 'vid',
             subtype: 'highschool',
             title: 'Bi-County',
@@ -168,7 +178,7 @@ const vid = [
             img: '',
         },
         {
-            id: 17,
+            id: 19,
             type: 'vid',
             subtype: 'highschool',
             title: 'LaVille Marching Band Intro',
@@ -177,7 +187,7 @@ const vid = [
             img: '',
         },
         {
-            id: 18,
+            id: 20,
             type: 'vid',
             subtype: 'highschool',
             title: 'Prom Date vs. Teammate',
@@ -186,7 +196,7 @@ const vid = [
             img: '',
         },
         {
-            id: 19,
+            id: 21,
             type: 'vid',
             subtype: 'highschool',
             title: 'Sports Intro',
@@ -197,7 +207,63 @@ const vid = [
     ],
     [
         {
-            id: 20,
+            id: 22,
+            type: 'vid',
+            subtype: 'college',
+            title: 'Manchester Munchies: Peanut Butter Cookies',
+            desc: "The video that did it all. This video wasn't planned by me, but I was appointed to the position of Editor when a friend of mine at my high school suggested it to me. My friend did most of the work, like getting some of the footage with the team and getting sound for the video. After all of his work was done, he simply gave me a flash drive and told me that I was on my own now. Unfortunately, there was no storyboard to work with or anything of the sort. What he really wanted was a video, and thats what I did for him. This video was created with Sony Vegas, Boris, and Saphire.",
+            link: 'https://youtu.be/6Df2wgmQIKA?si=lqSId3NnyUxU6x-p',
+            img: '',
+        },
+        {
+            id: 23,
+            type: 'vid',
+            subtype: 'college',
+            title: 'Dee on the Scene: Taste of Africa',
+            desc: 'My teacher, Mr. Lieto, wanted me to make a video for the newcomers of marching band. This video would feature all of the things that we did during our first year of marching band and showcasing the previous show that we did, which was based off of Narnia. Our teacher would then talk during the video, explaining how marching band affects people and how fun it is so that people can eventually join marching band. This video was definitely effective, and many people were excited to join the next year for our next show.',
+            link: 'https://youtu.be/3Ha0544xgag?si=Lq2sTnmHjDNop_zh',
+            img: '',
+        },
+        {
+            id: 24,
+            type: 'vid',
+            subtype: 'college',
+            title: 'More That Meats the Eye',
+            desc: "I had to do this video for a class that I was in about marketing. Everyone was instructed to have a prom date and a person that knew you at the same level as your date, and you had to come up with questions that they can answer. If you didn't have a prom date, you could either pair up with someone that had one or fake having one. Since I had my prom date, I figured this would be a simple setup, especially since there is a green screen in the background and I have all the time in the world to add a scoreboard and sound effects. I could safely say that this video was easy to make despite the amount of things I added to it.",
+            link: 'https://drive.google.com/file/d/1INh1GJoiRWZYHJtcSd3Vmhb6HYdg5ugo/view?usp=sharing',
+            img: '',
+        },
+        {
+            id: 25,
+            type: 'vid',
+            subtype: 'college',
+            title: 'Survivor Class',
+            desc: 'This actually kickstarted my whole career as a video editor for somebody else. There was a teacher who was controlling the whole operation for broadcasting and needed some extra set of hands to improve their sports broadcasts. I was given a list of things to do, and one of those things was a video for every sporting event introduction. The video was very simple, since he gave me everything that was needed. I put everything together first, then added subtitles after that. This was rendered twice, the second time was to add more footage and fix a couple of things with the subtitles.',
+            link: 'https://drive.google.com/file/d/1svrLaIfDhzVgMdeBBTi5a48_qwWVyYRw/view?usp=sharing',
+            img: '',
+        },
+        {
+            id: 26,
+            type: 'vid',
+            subtype: 'college',
+            title: 'McLovin Advertisement',
+            desc: "I had to do this video for a class that I was in about marketing. Everyone was instructed to have a prom date and a person that knew you at the same level as your date, and you had to come up with questions that they can answer. If you didn't have a prom date, you could either pair up with someone that had one or fake having one. Since I had my prom date, I figured this would be a simple setup, especially since there is a green screen in the background and I have all the time in the world to add a scoreboard and sound effects. I could safely say that this video was easy to make despite the amount of things I added to it.",
+            link: 'https://drive.google.com/file/d/1uKAEMN310YproqrJxXJAaYzIK0xAK7wM/view?usp=sharing',
+            img: '',
+        },
+        {
+            id: 27,
+            type: 'vid',
+            subtype: 'college',
+            title: 'Netflix Christmas Movie',
+            desc: 'This actually kickstarted my whole career as a video editor for somebody else. There was a teacher who was controlling the whole operation for broadcasting and needed some extra set of hands to improve their sports broadcasts. I was given a list of things to do, and one of those things was a video for every sporting event introduction. The video was very simple, since he gave me everything that was needed. I put everything together first, then added subtitles after that. This was rendered twice, the second time was to add more footage and fix a couple of things with the subtitles.',
+            link: 'https://drive.google.com/file/d/10UpYfzC5UjdPs5vsVr6hb1ezyeG6Ggph/view?usp=sharing',
+            img: '',
+        },
+    ],
+    [
+        {
+            id: 28,
             type: 'vid',
             subtype: 'campaign',
             title: 'Bowman For Indiana: Advertisement 1',
@@ -206,7 +272,7 @@ const vid = [
             img: '',
         },
         {
-            id: 21,
+            id: 29,
             type: 'vid',
             subtype: 'campaign',
             title: 'Bowman For Indiana: Advertisement 2',
@@ -215,7 +281,7 @@ const vid = [
             img: '',
         },
         {
-            id: 22,
+            id: 30,
             type: 'vid',
             subtype: 'campaign',
             title: 'Bowman For Indiana: Social Distance',
@@ -224,7 +290,7 @@ const vid = [
             img: '',
         },
         {
-            id: 23,
+            id: 31,
             type: 'vid',
             subtype: 'campaign',
             title: 'Bowman For Indiana: All Together',
@@ -246,15 +312,17 @@ export default function Projects() {
 
     const [cgVidPersonal, setCgVidPersonal] = useState(false)
     const [cgVidHighSchool, setCgVidHighSchool] = useState(false)
+    const [cgVidCollege, setCgVidCollege] = useState(false)
     const [cgVidCampaign, setCgVidCampaign] = useState(false)
 
     const [count, setCount] = useState(
-        dev.length +
+            dev.length +
             web[0].length +
             web[1].length +
             vid[0].length +
             vid[1].length +
-            vid[2].length
+            vid[2].length +
+            vid[3].length + 1
     )
 
     useEffect(() => {
@@ -266,6 +334,7 @@ export default function Projects() {
         setCgWebBallState(false)
         setCgVidPersonal(false)
         setCgVidHighSchool(false)
+        setCgVidCollege(false)
         setCgVidCampaign(false)
     }
 
@@ -277,6 +346,7 @@ export default function Projects() {
     const collapseVidCategories = () => {
         setCgVidPersonal(false)
         setCgVidHighSchool(false)
+        setCgVidCollege(false)
         setCgVidCampaign(false)
     }
 
@@ -331,6 +401,7 @@ export default function Projects() {
         setClickWebs(false)
 
         setCgVidHighSchool(false)
+        setCgVidCollege(false)
         setCgVidCampaign(false)
 
         cgVidPersonal ? setCgVidPersonal(false) : setCgVidPersonal(true)
@@ -342,9 +413,22 @@ export default function Projects() {
         setClickWebs(false)
 
         setCgVidPersonal(false)
+        setCgVidCollege(false)
         setCgVidCampaign(false)
 
         cgVidHighSchool ? setCgVidHighSchool(false) : setCgVidHighSchool(true)
+    }
+
+    const toggleCgVidCollege = () => {
+        collapseWebCategories()
+        setClickProgram(false)
+        setClickWebs(false)
+
+        setCgVidPersonal(false)
+        setCgVidHighSchool(false)
+        setCgVidCampaign(false)
+
+        cgVidCollege ? setCgVidCollege(false) : setCgVidCollege(true)
     }
 
     const toggleCgVidCampaign = () => {
@@ -354,6 +438,7 @@ export default function Projects() {
 
         setCgVidPersonal(false)
         setCgVidHighSchool(false)
+        setCgVidCollege(false)
 
         cgVidCampaign ? setCgVidCampaign(false) : setCgVidCampaign(true)
     }
@@ -396,7 +481,10 @@ export default function Projects() {
                 <button id="button5" onClick={toggleCgVidHighSchool}>
                     <p>High School</p>
                 </button>
-                <button id="button6" onClick={toggleCgVidCampaign}>
+                <button id="button6" onClick={toggleCgVidCollege}>
+                    <p>College</p>
+                </button>
+                <button id="button7" onClick={toggleCgVidCampaign}>
                     <p>Campaign</p>
                 </button>
             </div>
@@ -405,7 +493,8 @@ export default function Projects() {
             <Project projects={web[1]} isVisible={cgWebBallState} />
             <Project projects={vid[0]} isVisible={cgVidPersonal} />
             <Project projects={vid[1]} isVisible={cgVidHighSchool} />
-            <Project projects={vid[2]} isVisible={cgVidCampaign} />
+            <Project projects={vid[2]} isVisible={cgVidCollege} />
+            <Project projects={vid[3]} isVisible={cgVidCampaign} />
         </div>
     )
 }
