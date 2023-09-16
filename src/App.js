@@ -24,6 +24,13 @@ function App() {
                 localStorage.setItem('posts', JSON.stringify(res.data))
             })
             .catch((err) => console.log(err))
+
+        axios
+            .get(process.env.REACT_APP_WP + 'project')
+            .then((res) => {
+                localStorage.setItem('projects', JSON.stringify(res.data))
+            })
+            .catch((err) => console.log(err))
         setLoaded(true)
     }, [loaded])
 
