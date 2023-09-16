@@ -1,0 +1,11 @@
+/*
+Theme Name: PiesTheme
+Author: Jared Bowman
+Description: Just to create post types.
+Version: 0.0.1
+Tags: bootstrap
+*/
+@charset "utf-8";
+body {
+    display: none;
+}
