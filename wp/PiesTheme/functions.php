@@ -1,9 +1,5 @@
 <?php
 
-$dev = 14;
-$web = 16;
-$vid = 15;
-
 // Register Custom Post Type
 function project_post_type() {
 
@@ -102,29 +98,8 @@ function project_taxonomy() {
 }
 add_action( 'init', 'project_taxonomy', 0 );
 
+add_filter( 'acf/settings/rest_api_format', function () {
+    return 'standard';
+} );
 
-
-// add_action('rest_api_init', function () {
-//     register_rest_route( 'pies/v2', 'projects/dev',array(
-//           'methods'  => 'GET',
-//           'callback' => 'get_dev_posts'
-//     ));
-//   });
-
-//   function get_dev_posts($request) {
-//         $posts = get_posts( array(
-//           'post_type' => 'projects'  
-//           'tax_query' => array(
-//             array(
-//                 'terms' => array('dev')
-//             )
-//           )
-//         ) );
-      
-//         if ( empty( $posts ) ) {
-//           return null;
-//         }
-      
-//         return $posts;
-//   }
 ?>

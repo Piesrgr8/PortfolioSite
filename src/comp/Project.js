@@ -7,24 +7,24 @@ export default function Project(props) {
         <div style={visible ? { display: 'block' } : { display: 'none' }}>
             {list.map((item) => (
                 <section id={item.id}>
-                    <h2 className="section-title">{item.title}</h2>
+                    <h2 className="section-title">{item.title.rendered}</h2>
                     <div className="section-inner">
                         <div className="section-img">
                             <div
                                 className="content-img"
                                 style={
-                                    !!item.img
+                                    !!item.acf.project_image
                                         ? { display: 'block' }
                                         : { display: 'none' }
                                 }
                             >
-                                <img src={item.img} />
+                                <img src={item.acf.project_image} />
                             </div>
                         </div>
                         <div className="section-desc">
-                            <p>{item.desc}</p>
+                            <p dangerouslySetInnerHTML={{__html: item.content.rendered}}/>
                             <button>
-                                <a href={item.link} target="_blank">
+                                <a href={item.acf.link} target="_blank">
                                     Check It Out!
                                 </a>
                             </button>
