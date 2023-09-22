@@ -10,9 +10,6 @@ export default function Blog() {
         const items = JSON.parse(localStorage.getItem('posts'))
         if (items) {
             setItems(items)
-            items.map((post) => {
-                console.log(post.slug)
-            })
         }
     }, [])
 

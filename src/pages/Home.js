@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import vid from '../assets/media/videos/Website.mp4'
 import logo from '../assets/media/pictures/logomain.png'
 

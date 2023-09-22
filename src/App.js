@@ -84,6 +84,7 @@ function App() {
 
     return (
         <BrowserRouter>
+        {loaded ?
             <div className="App">
                 <Header />
                 <Routes>
@@ -96,6 +97,7 @@ function App() {
                 </Routes>
                 <Footer />
             </div>
+            : <h1>Loading</h1>}
         </BrowserRouter>
     )
 }

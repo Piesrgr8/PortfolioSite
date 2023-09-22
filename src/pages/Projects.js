@@ -63,7 +63,7 @@ export default function Projects() {
             vidCollege.length +
             vidCampaign.length
         )
-    }, [])
+    }, [devPersonal, webPersonal, webCollege, vidPersonal, vidHighSchool, vidCollege, vidCampaign])
 
     const collapseAllCategories = () => {
         setCgWebPersonal(false)

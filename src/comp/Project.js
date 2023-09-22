@@ -18,13 +18,13 @@ export default function Project(props) {
                                         : { display: 'none' }
                                 }
                             >
-                                <img src={item.acf.project_image} />
+                                <img alt='Project Looks Cool Right?' src={item.acf.project_image} />
                             </div>
                         </div>
                         <div className="section-desc">
                             <p dangerouslySetInnerHTML={{__html: item.content.rendered}}/>
                             <button>
-                                <a href={item.acf.link} target="_blank">
+                                <a href={item.acf.link} rel="noreferrer" target="_blank">
                                     Check It Out!
                                 </a>
                             </button>
