@@ -9,13 +9,14 @@ export default function BlogPost() {
 
     useEffect(() => {
         const items = JSON.parse(localStorage.getItem('posts'))
+        // eslint-disable-next-line
         items.map((postslug) => {
-            if (postslug.slug == params.postslug) {
+            if (postslug.slug === params.postslug) {
                 setPost(postslug)
                 setLoaded(true)
             }
         })
-    }, [loaded])
+    }, [loaded, params])
 
     return <div>{loaded ? <Post post={post} /> : <h1>Loading...</h1>}</div>
 }

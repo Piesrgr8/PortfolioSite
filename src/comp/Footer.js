@@ -31,7 +31,7 @@ export default function Footer() {
 
                 <div id="text">
                     <p>
-                        Copyright © 2020 Piesrgr8. All rights reserved. Created
+                        Copyright © 2024 Piesrgr8. All rights reserved. Created
                         and Designed by Jared Bowman
                     </p>
                 </div>

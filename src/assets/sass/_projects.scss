@@ -36,11 +36,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
 
-    .section-desc button {
-        width: 160px;
-        font-size: 15px;
+        button {
+            width: 160px;
+            font-size: 15px;
+            cursor: pointer;
+        }
     }
 
     .section-title {
@@ -75,34 +76,69 @@
             margin: 20px 10px;
             font-size: 30px;
             transition: 0.2s;
+            cursor: pointer;
 
             p {
                 text-align: center;
                 font-size: 30px;
+                filter: blur(0);
+            }
+        }
+
+        #button1 {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            transition: 0.2s;
+            #background {
+                background-image: url('../media/pictures/stock-1.jpg');
+                background-repeat: no-repeat;
             }
         }
 
         #button1:hover {
-            color: white;
-            font-size: 30px;
-            text-shadow: 2px 2px 3px black;
-            background-image: url('../media/pictures/stock-1.jpg');
-            background-repeat: no-repeat;
             transition: 0.2s;
+
+            #background {
+                filter: blur(5px);
+                transition: 0.2s;
+            }
+            p {
+                transition: 0.2s;
+            }
         }
 
-        #button2:hover {
+        #button2 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
             background-position: center;
-            background-image: url('../media/pictures/HTML5_CSS_JavaScript.png');
-            background-size: auto 100px;
+            background-image: url('../media/pictures/websites.png');
+            background-size: cover;
             background-repeat: no-repeat;
             transition: 0.2s;
+
+            #background {
+                background-position: center;
+                background-image: url('../media/pictures/websites.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
 
-        #button3:hover {
+        #button2:hover {
+            transition: 0.2s;
+
+            #background {
+                filter: blur(5px);
+                transition: 0.2s;
+            }
+            p {
+                transition: 0.2s;
+            }
+        }
+
+        #button3 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
@@ -111,6 +147,25 @@
             background-size: 750px;
             background-repeat: no-repeat;
             transition: 0.2s;
+
+            #background {
+                background-position: center;
+                background-image: url('../media/pictures/Tips-for-Editing-Videos-Faster-Premiere-Pro.jpg');
+                background-size: 750px;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #button3:hover {
+            transition: 0.2s;
+
+            #background {
+                filter: blur(5px);
+                transition: 0.2s;
+            }
+            p {
+                transition: 0.2s;
+            }
         }
     }
 
@@ -120,40 +175,41 @@
         height: auto;
         text-align: center;
         justify-content: center;
-    }
 
-    .webbuttons button {
-        width: 20%;
-        height: 150px;
-        margin: 20px 10px;
-        font-size: 30px;
-        transition: 0.2s;
-    }
+        button {
+            width: 20%;
+            height: 150px;
+            margin: 20px 10px;
+            font-size: 30px;
+            transition: 0.2s;
+            cursor: pointer;
 
-    .webbuttons button p {
-        font-size: 30px;
-        text-align: center;
-    }
+            p {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
 
-    .webbuttons #button7:hover {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 3px black;
-        background-image: url('../media/pictures/cover.jpg');
-        background-size: 350px 250px;
-        background-repeat: no-repeat;
-        transition: 0.2s;
-    }
+        #button7:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-image: url('../media/pictures/cover.jpg');
+            background-size: 350px 250px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
 
-    .webbuttons #button8:hover {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 3px black;
-        background-position: center;
-        background-image: url('../media/pictures/bsucardinal.png');
-        background-size: auto 100px;
-        background-repeat: no-repeat;
-        transition: 0.2s;
+        #button8:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/bsucardinal.png');
+            background-size: auto 100px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
     }
 
     .vidbuttons {
@@ -162,59 +218,63 @@
         height: auto;
         text-align: center;
         justify-content: center;
-    }
 
-    .vidbuttons button {
-        width: 20%;
-        height: 150px;
-        margin: 20px 10px;
-        font-size: 30px;
-        transition: 0.2s;
-    }
+        button {
+            width: 20%;
+            height: 150px;
+            margin: 20px 10px;
+            font-size: 30px;
+            transition: 0.2s;
+            cursor: pointer;
 
-    .vidbuttons button p {
-        font-size: 30px;
-        text-align: center;
-    }
+            p {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
 
-    .vidbuttons #button4:hover {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 3px black;
-        background-image: url('../media/pictures/cover.jpg');
-        background-size: 350px 250px;
-        background-repeat: no-repeat;
-        transition: 0.2s;
-    }
+        #button4:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-image: url('../media/pictures/cover.jpg');
+            background-size: 350px 250px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
 
-    .vidbuttons #button5:hover {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 3px black;
-        background-position: center;
-        background-image: url('../media/pictures/laville.png');
-        background-size: auto 100px;
-        background-repeat: no-repeat;
-        transition: 0.2s;
-    }
+        #button5:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/laville.png');
+            background-size: auto 100px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
 
-    .vidbuttons #button6:hover {
-        color: white;
-        font-size: 30px;
-        text-shadow: 2px 2px 3px black;
-        background-position: center;
-        background-image: url('../media/pictures/afs.png');
-        background-size: 350px;
-        background-repeat: no-repeat;
-        transition: 0.2s;
-    }
+        #button6:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/bsucardinal.png');
+            background-size: auto 100px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
 
-    .content-video iframe {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        box-shadow: -5px 8px 7px 3px black;
-        border: none;
+        #button7:hover {
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+            background-position: center;
+            background-image: url('../media/pictures/afs.png');
+            background-size: 350px;
+            background-repeat: no-repeat;
+            transition: 0.2s;
+        }
     }
 
     .content-video {
@@ -223,16 +283,24 @@
         text-align: center;
         margin: 0 auto;
         padding-bottom: 100px;
+
+        iframe {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            box-shadow: -5px 8px 7px 3px black;
+            border: none;
+        }
     }
 
     .content-img {
         display: block;
         text-align: center;
-    }
 
-    .content-img img {
-        box-shadow: 4px 8px 7px 3px black;
-        width: 700px;
+        img {
+            box-shadow: 4px 8px 7px 3px black;
+            width: 700px;
+        }
     }
 }
 
@@ -240,14 +308,14 @@
     .projects {
         section {
             margin: 0px 30px;
+
+            p {
+                margin: 10px;
+            }
         }
 
         .section-title {
             text-align: center;
-        }
-
-        section p {
-            margin: 10px;
         }
 
         .section-inner {
@@ -272,7 +340,8 @@
             display: flex;
             flex-direction: row;
         }
-        .projects .section-inner {
+
+        .section-inner {
             flex-direction: column;
         }
 
@@ -304,12 +373,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
 
-        .buttons button {
-            width: 300px;
-            height: 200px;
-            margin: 15px 0px;
+            button {
+                width: 300px;
+                height: 200px;
+                margin: 15px 0px;
+            }
         }
 
         .webbuttons,
@@ -326,19 +395,19 @@
             }
         }
 
-        .projects section {
+        section {
             margin: 0px 30px;
+
+            p {
+                margin: 10px;
+            }
         }
 
-        .projects .section-title {
+        .section-title {
             text-align: center;
         }
 
-        .projects section p {
-            margin: 10px;
-        }
-
-        .projects .section-inner {
+        .section-inner {
             flex-direction: column;
         }
 

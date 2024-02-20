@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import vid from '../assets/media/videos/Website.mp4'
 import logo from '../assets/media/pictures/logomain.png'
 
@@ -35,7 +35,7 @@ export default function Home() {
                         twitch, and other different kinds of projects, so come
                         back regularly once the final touches have been applied!
                         Thank you for coming to the website, and hope you are
-                        staying safe at home and surviving this crazy pandemic!
+                        staying safe!
                     </p>
                     <p>
                         If you want to know more about my work and what I do,
