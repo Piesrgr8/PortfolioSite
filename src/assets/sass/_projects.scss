@@ -77,11 +77,30 @@
             font-size: 30px;
             transition: 0.2s;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
 
             p {
                 text-align: center;
                 font-size: 30px;
                 filter: blur(0);
+                position: relative;
+                z-index: 1;
+                transition: font-size 0.2s;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: blur(0);
+                transition: filter 0.2s;
+                z-index: 0;
             }
         }
 
@@ -89,22 +108,9 @@
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            transition: 0.2s;
-            #background {
+
+            &::before {
                 background-image: url('../media/pictures/stock-1.jpg');
-                background-repeat: no-repeat;
-            }
-        }
-
-        #button1:hover {
-            transition: 0.2s;
-
-            #background {
-                filter: blur(5px);
-                transition: 0.2s;
-            }
-            p {
-                transition: 0.2s;
             }
         }
 
@@ -112,29 +118,9 @@
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/websites.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            transition: 0.2s;
 
-            #background {
-                background-position: center;
+            &::before {
                 background-image: url('../media/pictures/websites.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-        }
-
-        #button2:hover {
-            transition: 0.2s;
-
-            #background {
-                filter: blur(5px);
-                transition: 0.2s;
-            }
-            p {
-                transition: 0.2s;
             }
         }
 
@@ -142,30 +128,19 @@
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/Tips-for-Editing-Videos-Faster-Premiere-Pro.jpg');
-            background-size: 750px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
 
-            #background {
-                background-position: center;
+            &::before {
                 background-image: url('../media/pictures/Tips-for-Editing-Videos-Faster-Premiere-Pro.jpg');
-                background-size: 750px;
-                background-repeat: no-repeat;
+                background-size: 750px; /* Adjust background size as needed */
             }
         }
 
-        #button3:hover {
-            transition: 0.2s;
+        button:hover::before {
+            filter: blur(5px);
+        }
 
-            #background {
-                filter: blur(5px);
-                transition: 0.2s;
-            }
-            p {
-                transition: 0.2s;
-            }
+        button:hover p {
+            font-size: 31px;
         }
     }
 
