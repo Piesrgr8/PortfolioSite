@@ -1,127 +1,88 @@
-.content {
-    padding-top: 100px;
-    width: 100%;
-}
-
-.content-title {
+.media-container {
     display: block;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-}
+    margin: 80px auto;
 
-.content-title h1 {
-    font-family: prototype;
-    font-size: 100px;
-}
+    #media-header {
+        font-family: prototype;
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
 
-.content-title hr {
-    margin: 10px 480px;
-    border-color: black;
-    border-width: thick;
-}
+    .media-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
 
-.conent-desc {
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    margin: 0px 500px;
-    padding: 20px;
-    border: solid;
-    border-radius: 25px;
-}
+        .media-card {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 443px;
+            justify-content: space-between;
+            border-radius: 25px;
+            transition: width 0.2s;
+            position: relative;
+            overflow: hidden;
 
-.twitch-content {
-    display: flex;
-    height: 900px;
-    padding-top: 100px;
-    margin: 0px 200px;
-    flex-direction: column;
-    align-items: center;
-}
+            .background {
+                margin: 50px auto;
 
-.twitch-content img {
-    display: block;
-    width: 600px;
-    height: 300px;
-}
+                img {
+                    width: 235px;
+                }
+            }
 
-.twitch-content #placeholders {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border: solid;
-    border-color: #a645ff;
-}
+            .media-title {
+                margin: 30px auto;
 
-.youtube-content {
-    display: flex;
-    height: 900px;
-    padding-top: 100px;
-    margin: 0px 200px;
-    flex-direction: column;
-    align-items: center;
-}
+                h1 {
+                    color: white;
+                    transition: text-shadow 0.2s;
+                }
+            }
 
-.youtube-content img {
-    display: block;
-    width: 600px;
-    height: 300px;
-}
+            .iframe-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
 
-.youtube-content #placeholders {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border: solid;
-    border-color: #fd0004;
-}
+            .media-arrow {
+                position: relative;
+                text-align: end;
+                margin: 10px 30px;
+                color: white;
+                font-size: 50px;
+            }
 
-.discord-content {
-    display: flex;
-    height: 900px;
-    padding-top: 100px;
-    margin: 0px 200px;
-    flex-direction: column;
-    align-items: center;
-}
+            &:hover {
+                width: 370px;
 
-.discord-content img {
-    display: block;
-    width: 700px;
-    height: 200px;
-}
+                .media-title {
+                    h1 {
+                        text-shadow: 1px 4px 4px black;
+                        transition: text-shadow 0.2s;
+                    }
+                }
+            }
 
-.discord-content #placeholders {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border: solid;
-    border-color: #7289da;
-}
+            &.active {
+                width: 1000px;
 
-.spotify-content {
-    display: flex;
-    height: 900px;
-    padding-top: 100px;
-    margin: 0px 200px;
-    flex-direction: column;
-    align-items: center;
-}
+                .background {
+                    display: none;
+                }
 
-.spotify-content img {
-    display: block;
-    width: 700px;
-    height: 200px;
-    margin-bottom: 20px;
-}
-
-.spotify-content #placeholders {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border: solid;
-    border-color: #1ab26b;
+                .media-title {
+                    h1 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 900px) {

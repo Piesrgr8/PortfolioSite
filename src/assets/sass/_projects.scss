@@ -71,6 +71,7 @@
         text-align: center;
 
         button {
+            border: none;
             width: 30%;
             height: 350px;
             margin: 20px 10px;
@@ -81,16 +82,18 @@
             overflow: hidden;
 
             p {
-                text-align: center;
+                margin: unset;
                 font-size: 30px;
                 filter: blur(0);
-                position: relative;
-                z-index: 1;
+                position: absolute;
                 transition: font-size 0.2s;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
 
             &::before {
-                content: "";
+                content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -140,7 +143,7 @@
         }
 
         button:hover p {
-            font-size: 31px;
+            font-size: 38px;
         }
     }
 
@@ -152,38 +155,72 @@
         justify-content: center;
 
         button {
+            border: none;
             width: 20%;
             height: 150px;
             margin: 20px 10px;
             font-size: 30px;
             transition: 0.2s;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
 
             p {
+                margin: unset;
                 font-size: 30px;
                 text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: font-size 0.2s;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: blur(0);
+                transition: filter 0.2s;
+                z-index: 0;
             }
         }
 
-        #button7:hover {
+        #button7 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-image: url('../media/pictures/cover.jpg');
-            background-size: 350px 250px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/cover.png');
+                background-size: 435px;
+                background-position: center;
+            }
         }
 
-        #button8:hover {
+        #button8 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/bsucardinal.png');
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/bsucardinal.png');
+                background-size: 550px;
+                background-position: center;
+            }
+        }
+
+        button:hover::before {
+            filter: blur(5px);
+        }
+
+        button:hover p {
+            font-size: 38px;
         }
     }
 
@@ -195,60 +232,96 @@
         justify-content: center;
 
         button {
+            border: none;
             width: 20%;
             height: 150px;
             margin: 20px 10px;
             font-size: 30px;
             transition: 0.2s;
             cursor: pointer;
+            position: relative;
+            overflow: hidden;
 
             p {
+                margin: unset;
                 font-size: 30px;
                 text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: font-size 0.2s;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: blur(0);
+                transition: filter 0.2s;
+                z-index: 0;
             }
         }
 
-        #button4:hover {
+        #button4 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-image: url('../media/pictures/cover.jpg');
-            background-size: 350px 250px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/cover.png');
+                background-size: 435px;
+                background-position: center;
+            }
         }
 
-        #button5:hover {
+        #button5 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/laville.png');
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/laville.png');
+                background-size: 435px;
+                background-position: center;
+            }
         }
 
-        #button6:hover {
+        #button6 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/bsucardinal.png');
-            background-size: auto 100px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/bsucardinal.png');
+                background-size: 550px;
+                background-position: center;
+            }
         }
 
-        #button7:hover {
+        #button7 {
             color: white;
             font-size: 30px;
             text-shadow: 2px 2px 3px black;
-            background-position: center;
-            background-image: url('../media/pictures/afs.png');
-            background-size: 350px;
-            background-repeat: no-repeat;
-            transition: 0.2s;
+
+            &::before {
+                background-image: url('../media/pictures/afs.png');
+                background-size: 550px;
+                background-position: center;
+            }
+        }
+
+        button:hover::before {
+            filter: blur(5px);
+        }
+
+        button:hover p {
+            font-size: 38px;
         }
     }
 

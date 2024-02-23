@@ -222,7 +222,7 @@ export default function Projects() {
                     <p>Personal</p>
                 </button>
                 <button id="button8" onClick={toggleCgWebBallState}>
-                    <p>Ball State</p>
+                    <p>College</p>
                 </button>
             </div>
             <div
