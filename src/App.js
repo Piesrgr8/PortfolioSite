@@ -13,6 +13,7 @@ import Media from './pages/Media'
 import Blog from './pages/Blog'
 import BlogPost from './comp/BlogPost'
 import BackgroundTest from './pages/BackgroundTest'
+import ScrollToTop from './comp/ScrollToTop'
 
 function App() {
     const [loaded, setLoaded] = useState(false)
@@ -106,6 +107,7 @@ function App() {
             {loaded ? (
                 <div className="App">
                     <Header />
+                    <ScrollToTop/>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />

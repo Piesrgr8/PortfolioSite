@@ -114,6 +114,7 @@
 
             &::before {
                 background-image: url('../media/pictures/stock-1.jpg');
+                background-size: cover;
             }
         }
 
@@ -124,6 +125,7 @@
 
             &::before {
                 background-image: url('../media/pictures/websites.png');
+                background-size: cover;
             }
         }
 
@@ -134,7 +136,7 @@
 
             &::before {
                 background-image: url('../media/pictures/Tips-for-Editing-Videos-Faster-Premiere-Pro.jpg');
-                background-size: 750px; /* Adjust background size as needed */
+                background-size: cover;
             }
         }
 
@@ -198,7 +200,7 @@
 
             &::before {
                 background-image: url('../media/pictures/cover.png');
-                background-size: 435px;
+                background-size: cover;
                 background-position: center;
             }
         }
@@ -210,7 +212,7 @@
 
             &::before {
                 background-image: url('../media/pictures/bsucardinal.png');
-                background-size: 550px;
+                background-size: cover;
                 background-position: center;
             }
         }
@@ -275,7 +277,7 @@
 
             &::before {
                 background-image: url('../media/pictures/cover.png');
-                background-size: 435px;
+                background-size: cover;
                 background-position: center;
             }
         }
@@ -287,7 +289,7 @@
 
             &::before {
                 background-image: url('../media/pictures/laville.png');
-                background-size: 435px;
+                background-size: cover;
                 background-position: center;
             }
         }
@@ -311,7 +313,7 @@
 
             &::before {
                 background-image: url('../media/pictures/afs.png');
-                background-size: 550px;
+                background-size: cover;
                 background-position: center;
             }
         }

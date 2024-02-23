@@ -5,20 +5,20 @@
 
 .content-title {
     width: 100%;
-}
 
-.content-title h1 {
-    color: black;
-    font-family: prototype;
-    font-size: 100px;
-    text-align: center;
-    padding-top: 100px;
-}
+    h1 {
+        color: black;
+        font-family: prototype;
+        font-size: 100px;
+        text-align: center;
+        padding-top: 100px;
+    }
 
-.content-title hr {
-    margin: 70px 480px;
-    border-color: black;
-    border-width: thick;
+    hr {
+        margin: 70px 480px;
+        border-color: black;
+        border-width: thick;
+    }
 }
 
 section {
@@ -35,18 +35,20 @@ section {
     align-items: center;
 }
 
-.section-title hr {
-    margin: 0px 60px 0px 40px;
-    margin-bottom: 50px;
-    border-color: black;
-    border-width: medium;
-}
+.section-title {
+    hr {
+        margin: 0px 60px 0px 40px;
+        margin-bottom: 50px;
+        border-color: black;
+        border-width: medium;
+    }
 
-.section-title h2 {
-    margin: 10px 40px;
-    border-color: black;
-    border-width: medium;
-    text-align: left;
+    h2 {
+        margin: 10px 40px;
+        border-color: black;
+        border-width: medium;
+        text-align: left;
+    }
 }
 
 #img-shadow {
@@ -55,6 +57,14 @@ section {
     -moz-box-shadow: inset 0px 2px 20px #000000;
     -webkit-box-shadow: inset 0 2px 20px #000000;
     box-shadow: inset 0 2px 20px #000000;
+
+    img {
+        vertical-align: middle;
+        width: 210px;
+        height: 230px;
+        float: left;
+        padding: 5px 5px;
+    }
 }
 
 #img-shadow2 {
@@ -62,6 +72,13 @@ section {
     -moz-box-shadow: inset 0px 2px 20px #000000;
     -webkit-box-shadow: inset 0 2px 20px #000000;
     box-shadow: inset 0 2px 20px #000000;
+
+    img {
+        vertical-align: middle;
+        width: 490px;
+        float: right;
+        padding: 5px 5px;
+    }
 }
 
 #img-shadow3 {
@@ -70,28 +87,13 @@ section {
     -moz-box-shadow: inset 0px 2px 20px #000000;
     -webkit-box-shadow: inset 0 2px 20px #000000;
     box-shadow: inset 0 2px 20px #000000;
-}
 
-#img-shadow img {
-    vertical-align: middle;
-    width: 210px;
-    height: 230px;
-    float: left;
-    padding: 5px 5px;
-}
-
-#img-shadow2 img {
-    vertical-align: middle;
-    width: 490px;
-    float: right;
-    padding: 5px 5px;
-}
-
-#img-shadow3 img {
-    vertical-align: middle;
-    width: 200px;
-    float: left;
-    padding: 5px 5px;
+    img {
+        vertical-align: middle;
+        width: 200px;
+        float: left;
+        padding: 5px 5px;
+    }
 }
 
 h2 {
