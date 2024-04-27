@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import ReactGA from 'react-ga'
 import './assets/css/App.css'
 
 import Home from './pages/Home'
@@ -12,11 +13,16 @@ import Projects from './pages/Projects'
 import Media from './pages/Media'
 import Blog from './pages/Blog'
 import BlogPost from './comp/BlogPost'
-import BackgroundTest from './pages/BackgroundTest'
 import ScrollToTop from './comp/ScrollToTop'
+
+ReactGA.initialize(process.env.REACT_APP_TRACKING_ID)
 
 function App() {
     const [loaded, setLoaded] = useState(false)
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search)
+    }, [])
 
     useEffect(() => {
         axios
